@@ -1,20 +1,20 @@
 function consoleType() {
-var consoleLatest = eval(prompt("Input your code here."));
-if(confirm("Do you want a return function of your code?")) {
-alert(consoleLatest);
+var consoleLatest = myWindow.opener.eval(prompt("Input your code here."));
+if(myWindow.opener.confirm("Do you want a return function of your code?")) {
+myWindow.opener.alert(consoleLatest);
 }
 }
 
 function bringItBack() {
-if(location.hostname === "scratch.mit.edu") {
-document.getElementsByTagName("a")[3].innerHTML = "Discuss";
-document.getElementsByTagName("a")[3].href = "/discuss";
+if(myWindow.opener.location.hostname === "scratch.mit.edu") {
+myWindow.opener.document.getElementsByTagName("a")[3].innerHTML = "Discuss";
+myWindow.opener.document.getElementsByTagName("a")[3].href = "/discuss";
 }
 }
 
 function gmailMoji() {
-if(location.hostname === "mail.google.com") {
-var divs = document.getElementsByTagName("div");
+if(myWindow.opener.location.hostname === "mail.google.com") {
+var divs = myWindow.opener.document.getElementsByTagName("div");
 for(i=0;i<divs.length;i++){
 divs[i].innerHTML = "10110101001010";
 }
