@@ -1,0 +1,2 @@
+var customsURLs = [];
+var customHTMLs = [];
