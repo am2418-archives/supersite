@@ -1,2 +1,2 @@
 var customsURLs = [];
-var customHTMLs = [];
+var customHTMLs = "";
