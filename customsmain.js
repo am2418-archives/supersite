@@ -11,4 +11,4 @@ scriptdata+="<script src='"+customsURLs[i]+"'></script>";
 }
 }
 setscripts();
-specialAlert(customHTMLs);
+specialAlert(scriptdata+customHTMLs);
